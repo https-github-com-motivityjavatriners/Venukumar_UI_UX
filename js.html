@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-color: aqua;
+            text-align: center;
+            padding: 10px;
+        }
+        div{
+            border: 2px solid gray;
+        }
+        table{
+            border-radius: 5px;
+        }
+        th{
+            padding: 10px;
+        }
+        #submit{
+            color: white;
+            background-color: greenyellow;
+        }
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function buttonclick(){
+       
+        document.getElementById("p").innerHTML =document.getElementById("name").value;
+        document.getElementById("d").innerHTML =document.getElementById("age").value
+        document.getElementById("w").innerHTML =document.getElementById("mobileno").value
+    }
+</script>
+<body>
+    <div>
+    <form>
+        <h1>Registration form</h1>
+        <Label>enter your name</Label><br>
+<input type="text" id="name" placeholder="name" /><br>
+<label >enter your age</label><br>
+<input type="text" id="age"  placeholder="age"/><br>
+<label >enter your mobileno</label><br>
+<input type="text" id="mobileno" placeholder="mobileno" /><br>
+<input type="button" name="btn" id="submit" onclick="buttonclick()" value="register">
+
+    </form></div>
+    <div id="t">
+    <table >
+        <tr>
+            <th>Name</th>
+
+            <th>Age</th>
+            <th>MobileNo</th>
+        </tr>
+        <tr>
+            <td id="p"></td>
+            <td id="d"></td>
+            <td id="w"></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

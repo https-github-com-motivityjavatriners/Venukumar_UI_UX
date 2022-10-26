@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Employee Management
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body background="url(https://th.bing.com/th/id/R.fe5cd069c5f440776c7a0083d2d42583?rik=guC6X8fwCUAWYw&riu=http%3a%2f%2fwww.dreamtemplate.com%2fdreamcodes%2fbg_images%2fcolor%2fc12.jpg&ehk=NELVzbirqiYV1UXpCHpeLJV7KdlUywS6AgeTxEAO3ZY%3d&risl=&pid=ImgRaw&r=0)">
+
+	<h1><center>Employee Management System</center></h1>
+	<hr>
+			<div class="employee-form">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Enter Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label> Enter Email Id</label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div> 
+                        <label>Enter Salary</label>
+                        <input type="text" name="salary" id="salary">
+                    </div>
+                    <div>
+                        <label>Enter City Name</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+		</div>
+		<br/>
+		<div class = "employees-table">
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Employee Name</th>
+                            <th>Email Id</th>
+                            <th>Salary</th>
+                            <th>City</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
